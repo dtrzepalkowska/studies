@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The World Wide Web project</title>
+		<link rel="stylesheet" href="page.css"/>
+		<link rel="stylesheet" href="leaflet.css"/>
+		<script src="/leaflet/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+		<header><h1>World Wide Web</h1></header>
+		<main>
+			<h2><em>The WorldWideWeb</em></h2> (W3) is a wide-area<A
+			NAME=0 HREF="WhatIs.html">
+			hypermedia</A> information retrieval
+			initiative aiming to give universal
+			access to a large universe of documents.<P>
+			Everything there is online about
+			W3 is linked directly or indirectly
+			to this document, including an <A
+			NAME=24 HREF="Summary.html">executive
+			summary</A> of the project, <A
+			NAME=29 HREF="Administration/Mailing/Overview.html">Mailing lists</A>
+			, <A
+			NAME=30 HREF="Policy.html">Policy</A> , November's  <A
+			NAME=34 HREF="News/9211.html">W3  news</A> ,
+			<A
+			NAME=41 HREF="FAQ/List.html">Frequently Asked Questions</A> .
+			<DL>
+			<DT><A
+			NAME=44 HREF="../DataSources/Top.html"><h2><em>What's out there?</em></h2></A>
+			<DD> Pointers to the
+			world's online information,<A
+			NAME=45 HREF="../DataSources/bySubject/Overview.html"> subjects</A>
+			, <A
+			NAME=z54 HREF="../DataSources/WWW/Servers.html">W3 servers</A>, etc.
+			<DT><A
+			NAME=46 HREF="Help.html"><h2><em>Help</em></h2></A>
+			<DD> on the browser you are using
+			<DT><A
+			NAME=13 HREF="Status.html"><h2><em>Software Products</em></h2></A>
+			<DD> A list of W3 project
+			components and their current state.
+			(e.g. <A
+			NAME=27 HREF="LineMode/Browser.html">Line Mode</A> ,X11 <A
+			NAME=35 HREF="Status.html#35">Viola</A> ,  <A
+			NAME=26 HREF="NeXT/WorldWideWeb.html">NeXTStep</A>
+			, <A
+			NAME=25 HREF="Daemon/Overview.html">Servers</A> , <A
+			NAME=51 HREF="Tools/Overview.html">Tools</A> ,<A
+			NAME=53 HREF="MailRobot/Overview.html"> Mail robot</A> ,<A
+			NAME=52 HREF="Status.html#57">
+			Library</A> )
+			<DT><A
+			NAME=47 HREF="Technical.html"><h2><em>Technical</em></h2></A>
+			<DD> Details of protocols, formats,
+			program internals etc
+			<DT><A
+			NAME=40 HREF="Bibliography.html"><h2><em>Bibliography</em></h2></A>
+			<DD> Paper documentation
+			on  W3 and references.
+			<DT><A
+			NAME=14 HREF="People.html"><h2><em>People</em></h2></A>
+			<DD> A list of some people involved
+			in the project.
+			<DT><A
+			NAME=15 HREF="History.html"><h2><em>History</em></h2></A>
+			<DD> A summary of the history
+			of the project.
+			<DT><A
+			NAME=37 HREF="Helping.html"><h2><em>How can I help</em></h2></A> ?
+			<DD> If you would like
+			to support the web..
+			<DT><A
+			NAME=48 HREF="../README.html"><h2><em>Getting code</em></h2></A>
+			<DD> Getting the code by<A
+			NAME=49 HREF="LineMode/Defaults/Distribution.html">
+			anonymous FTP</A> , etc.</A>
+			</DL>
+		</main>
+
+		<map>
+			<div id="mapid"></div>
+		</map>
+
+		<aside class="right">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat scelerisque nisl quis porttitor. Integer convallis metus lectus, at aliquet metus semper ac. Vivamus posuere lacus vel odio viverra lacinia. Mauris efficitur arcu at massa porta ultricies. Donec nec erat sed eros accumsan finibus. Nulla non nulla egestas augue lobortis rhoncus lacinia eget nisl. Fusce varius, libero sit amet tempor egestas, massa erat fermentum sem, sit amet tristique ante odio ac urna. In condimentum aliquet lorem nec rutrum. Vivamus vitae lacus porta, tincidunt neque non, viverra velit. Aliquam pharetra lectus quis quam placerat, at congue lorem rutrum. Aenean vel magna eu ligula aliquet maximus sit amet sit amet leo. Donec elementum pellentesque purus a interdum....</div>
+		</aside>
+
+    <aside class="left">
+      <div>
+        Vivamus eu mi laoreet, laoreet neque eget, tincidunt purus. Suspendisse ligula erat, suscipit non augue non, porta blandit ipsum. Aliquam sagittis faucibus nibh, eget blandit justo egestas eu. Curabitur elementum, lacus non ornare consequat, ipsum quam egestas neque, id placerat arcu nibh molestie elit. Integer tincidunt eget quam at pretium. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sodales justo nec metus venenatis consequat. Aenean fringilla diam convallis nunc faucibus iaculis. Etiam dapibus iaculis quam, vel faucibus est aliquet ut.
+
+Aliquam vitae velit lorem. Ut eu viverra felis. Praesent ornare justo quis nisi tincidunt, dapibus scelerisque justo luctus. Donec ac nisi non orci viverra posuere vel in ante. Vivamus ultrices facilisis erat a mollis. Ut non pharetra ligula, id scelerisque urna. Donec volutpat, nisl quis fermentum vestibulum, nibh urna hendrerit turpis, sit amet semper mi massa nec eros.
+      </div>
+    </aside>
+	</body>
+	<script>
+		var mymap = L.map('mapid').setView([46.23439,6.0539691], 15);
+		L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+			maxZoom: 18,
+			id: 'mapbox.streets'
+		}).addTo(mymap);
+		L.marker([46.23439,6.0539691]).addTo(mymap)
+		.bindPopup("<b>CERN</b> IdeaSquare.").openPopup();
+		var popup = L.popup();
+	</script>
+</html>

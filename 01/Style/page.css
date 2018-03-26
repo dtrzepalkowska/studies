@@ -1,0 +1,94 @@
+@font-face {
+  font-family: Lato;
+  src: url(/fonts/Lato-Bold.ttf);
+  font-weight: bold; }
+@font-face {
+  font-family: Lato;
+  src: url(/fonts/Lato-Regular.ttf);
+  font-weight: normal; }
+body {
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 20% 50% 10%;
+  background-color: #536087; }
+
+header {
+  grid-column: 2;
+  text-align: center; }
+  header h1 {
+    font-family: Lato;
+    font-weight: normal;
+    font-size: 60px;
+    padding: 13%;
+    margin: 0px;
+    color: #f7f29b; }
+
+main {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: #fbfbfb;
+  padding: 20px; }
+  main h2 {
+    font-size: 30px;
+    display: inline; }
+
+main a {
+  color: #4a1759;
+  font-style: italic; }
+
+map {
+  grid-column: 2;
+  grid-row: 3;
+  padding: 30px 10px;
+  font-weight: bold; }
+
+.right {
+  grid-column: 3;
+  grid-row: 2/4;
+  background-color: #7ca0bc; }
+
+.right div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding: 10%; }
+
+.left {
+  grid-column: 1;
+  grid-row: 2/4;
+  background-color: #7ca0bc; }
+
+.left div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding: 10%; }
+
+#mapid {
+  margin: auto;
+  width: 90%;
+  height: 400px; }
+
+@media (max-width: 850px) {
+  body {
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 20%; }
+
+  header {
+    grid-column: 1;
+    grid-row: 1; }
+
+  main {
+    grid-column: 1;
+    grid-row: 2; }
+
+  map {
+    grid-column: 1;
+    grid-row: 3; } }
+
+/*# sourceMappingURL=page.css.map */
